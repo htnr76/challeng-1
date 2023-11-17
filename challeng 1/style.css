@@ -1,0 +1,143 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.white-bg {
+    background-color: hsl(0, 0%, 100%); /* White */
+}
+
+.light-gray-bg {
+    background-color: hsl(212, 45%, 89%); /* Light gray */
+}
+
+.grayish-blue-bg {
+    background-color: hsl(220, 15%, 55%); /* Grayish blue */
+}
+
+.dark-blue-bg {
+    background-color: hsl(218, 44%, 22%); /* Dark blue */
+}
+
+/* Responsive layout styles */
+@media (max-width: 375px) {
+    body{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .box{
+        width: 300px;
+        background-color: white;
+        height: 450px;
+        border: 1px solid white;
+        overflow: hidden;
+        border-radius: 15px;
+
+    }
+    .qr-code{
+        width: 270px;
+        height: auto;
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+
+    h1{
+        font-size: 20px;
+        margin-top: 15px;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    p{
+        font-size: 15px;
+        margin-top: 10px;
+        font-family: 'Outfit', sans-serif;
+        color: grey;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+    body{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .box{
+        width: 300px;
+        height: 450px;
+        border: 1px solid white;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 15px;
+    }
+    .qr-code{
+        width: 270px;
+        height: auto;
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 20px;
+        font-weight: bold 700;
+        margin-top: 15px;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    p{
+        font-size: 15px;
+        font-weight: bold 400;
+        margin-top: 15px;
+        font-family: 'Outfit', sans-serif;
+        color: grey;
+    }
+
+}
+
+@media (min-width: 1441px) {
+    body{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .box{
+        width: 600px;
+        height: 800px;
+        border: 1px solid white;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 25px;
+    }
+    .qr-code{
+        width: 540px;
+        height: auto;
+        margin-top: 30px;
+        border-radius: 25px;
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 15px;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    p{
+        font-size: 25px;
+        margin-top: 15px;
+        font-family: 'Outfit', sans-serif;
+        color: grey;
+    }
+}
+
